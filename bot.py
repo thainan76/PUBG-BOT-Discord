@@ -203,3 +203,5 @@ async def rank(ctx, username: str):
      t += "\nSeu rank foi alterado para:" + ranking + "Rating - " + num1 + " a " + num2
      text = str(t)
      await bot.say("Olá " + ctx.message.author.mention + " !" + text)
+       
+ bot.run('Mzg2MzkxNjUyMjAzMzY0MzUz.DQicGA.X5A-IxgOoZobP5d4gFuCZgSGp0U')
