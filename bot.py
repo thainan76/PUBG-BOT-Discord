@@ -55,7 +55,6 @@ async def ranka(ctx, username:str):
 
 
 @bot.command(pass_context=True)
-@rate_limited(1)
 async def rank(ctx, username: str):
      status = api.player(username)
      dic1 = get_stat(status["Stats"], "solo", "Rating", "sa", "2017-pre6")
