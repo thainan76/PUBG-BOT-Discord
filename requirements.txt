@@ -13,7 +13,4 @@ urban-async
 safygiphy
 discord.py
 requests
-json
 pypubg
-asyncio
-aiohttp
