@@ -129,7 +129,7 @@ async def rank(ctx, username: str):
          await bot.remove_roles(ctx.message.author, role_remove_0_1500)
          await bot.remove_roles(ctx.message.author, role_remove_1800_2000)
          await bot.add_roles(ctx.message.author, role_add)
-         print("FUNCIONOU 1")
+         print("FUNCIONOU - Rating - 1501 a 1800")
      elif rank_server == "Rating - 1801 a 2000+":
          role_add = discord.utils.get(ctx.message.server.roles, name="Rating - 1801 a 2000+")
          role_remove_0_1500 = discord.utils.get(ctx.message.server.roles, name="Rating - 0 a 1500")
@@ -137,7 +137,7 @@ async def rank(ctx, username: str):
          await bot.remove_roles(ctx.message.author, role_remove_0_1500)
          await bot.remove_roles(ctx.message.author, role_remove_1501_1800)
          await bot.add_roles(ctx.message.author, role_add)
-         print("FUNCIONOU 2")
+         print("FUNCIONOU 2 - Rating - 1801 a 2000+")
      else:
          role_add = discord.utils.get(ctx.message.server.roles, name=rank_server)
          role_remove_0_1500 = discord.utils.get(ctx.message.server.roles, name="Rating - 1501 a 1800")
@@ -145,7 +145,7 @@ async def rank(ctx, username: str):
          await bot.remove_roles(ctx.message.author, role_remove_0_1500)
          await bot.remove_roles(ctx.message.author, role_remove_1501_1800)
          await bot.add_roles(ctx.message.author, role_add)
-         print("FUNCIONOU 3")
+         print("FUNCIONOU 3 - Rating - 0 a 1500")
 
      season = "2017-pre6"
      regiao = "sa"
