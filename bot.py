@@ -201,4 +201,4 @@ async def rank(ctx, username: str):
      text = str(t)
      await bot.say("Olá " + ctx.message.author.mention + " !" + text)
        
-bot.run('Mzg2MzkxNjUyMjAzMzY0MzUz.DQicGA.X5A-IxgOoZobP5d4gFuCZgSGp0U')
+bot.run('Mzg2NTEyMjQwOTg5NDM3OTYz.DQZHYg.3QiTSK10B1Nw8RMB8nDdRtNo-bE')
