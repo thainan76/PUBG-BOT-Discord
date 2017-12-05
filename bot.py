@@ -134,7 +134,7 @@ async def rank(ctx, username: str):
          num2 = "mais"
 
      if  rank_server == "Rating: 1501 - 1800":
-         role_add = discord.utils.get(ctx.message.server.roles, name="Rating: 1501 - 1800")
+         role_add = discord.utils.get(ctx.message.server.roles, name=rank_server)
          role_remove_0_1500 = discord.utils.get(ctx.message.server.roles, name="Rating: 0 - 1500")
          role_remove_1801_2000 = discord.utils.get(ctx.message.server.roles, name="Rating: 1801 - 2000")
          role_remove_2001_2200 = discord.utils.get(ctx.message.server.roles, name="Rating: 2001 - 2200")
@@ -146,7 +146,7 @@ async def rank(ctx, username: str):
          await bot.add_roles(ctx.message.author, role_add)
          print("FUNCIONOU 1")
      elif rank_server == "Rating: 1801 - 2000":
-         role_add = discord.utils.get(ctx.message.server.roles, name="Rating: 1801 - 2000")
+         role_add = discord.utils.get(ctx.message.server.roles, name=rank_server)
          role_remove_0_1500 = discord.utils.get(ctx.message.server.roles, name="Rating: 0 - 1500")
          role_remove_1501_1800 = discord.utils.get(ctx.message.server.roles, name="Rating: 1501 - 1800")
          role_remove_2001_2200 = discord.utils.get(ctx.message.server.roles, name="Rating: 2001 - 2200")
@@ -203,5 +203,3 @@ async def rank(ctx, username: str):
      t += "\nSeu rank foi alterado para:" + ranking + "Rating - " + num1 + " a " + num2
      text = str(t)
      await bot.say("Olá " + ctx.message.author.mention + " !" + text)
-
-bot.run('Mzg3Mzc4MzgyMzk4MDI5ODI2.DQeUPw.FQNN1Mb4MdbNe5KeflpCrXY9MTg')
