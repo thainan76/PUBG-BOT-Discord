@@ -14,4 +14,3 @@ safygiphy
 discord.py
 requests
 pypubg
-ratelimit
