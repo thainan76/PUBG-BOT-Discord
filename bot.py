@@ -5,9 +5,6 @@ from pypubg import core
 import asyncio
 import requests
 import aiohttp
-from datetime import datetime
-import pdb
-from ratelimit import rate_limited
 import json
 
 api = core.PUBGAPI("ecb0deba-710c-411f-9342-630875d48a9e")
