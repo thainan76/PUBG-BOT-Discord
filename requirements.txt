@@ -11,3 +11,4 @@ crasync
 cr-py
 urban-async
 safygiphy
+discord.py==0.16.8 
