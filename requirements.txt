@@ -13,7 +13,6 @@ urban-async
 safygiphy
 discord.py
 requests
-pdb
 json
 pypubg
 asyncio
