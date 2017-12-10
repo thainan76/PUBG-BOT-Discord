@@ -56,11 +56,11 @@ async def ranka(ctx, username:str):
 @bot.command(pass_context=True)
 async def rank(ctx, username: str):
      status = api.player(username)
-     try:
+     
          dic1 = get_stat(status["Stats"], "solo", "Rating", "sa", "2017-pre6")
          dic2 = get_stat(status["Stats"], "duo", "Rating", "sa", "2017-pre6")
          dic3 = get_stat(status["Stats"], "squad", "Rating", "sa", "2017-pre6")
-
+    try:
          if dic1:
              rating1 = int(dic1["value"])
              modo_solo = "solo"
