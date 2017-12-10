@@ -60,7 +60,7 @@ async def rank(ctx, username: str):
          dic1 = get_stat(status["Stats"], "solo", "Rating", "sa", "2017-pre6")
          dic2 = get_stat(status["Stats"], "duo", "Rating", "sa", "2017-pre6")
          dic3 = get_stat(status["Stats"], "squad", "Rating", "sa", "2017-pre6")
-    try:
+    #try:
          if dic1:
              rating1 = int(dic1["value"])
              modo_solo = "solo"
@@ -201,7 +201,7 @@ async def rank(ctx, username: str):
          t += "\nSeu rank foi alterado para:" + ranking + "Rating - " + num1 + " a " + num2
          text = str(t)
          await bot.say("Olá " + ctx.message.author.mention + " !" + text)
-     except:
-         await bot.say(ctx.message.author.mention + ", digite seu nick corretamente, não conseguimos localizar dados para a conta <"+ username +">. ")
+    # except:
+     #    await bot.say(ctx.message.author.mention + ", digite seu nick corretamente, não conseguimos localizar dados para a conta <"+ username +">. ")
        
 bot.run('Mzg2NTEyMjQwOTg5NDM3OTYz.DQZHYg.3QiTSK10B1Nw8RMB8nDdRtNo-bE')
