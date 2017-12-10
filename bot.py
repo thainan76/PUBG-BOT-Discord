@@ -17,7 +17,7 @@ def on_ready():
     print("Pronto quando você estiver!")
     print("Estou rondando com o bot " + bot.user.name)
     print("ID: " + bot.user.id)
-    yield from bot.change_presence(game=discord.Game(name='!rank'))
+    yield from bot.change_presence(game=discord.Game(name='!rank NICK'))
 
 
 @asyncio.coroutine
