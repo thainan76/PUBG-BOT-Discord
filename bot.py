@@ -51,10 +51,10 @@ async def pubHelp(ctx):
 @bot.command(pass_context=True)
 async def rank(ctx, username: str):
     status = api.player(username)
-    dic1 = get_stat(status["Stats"], "solo", "Rating", "sa", status["defaultSeason"])
-    dic2 = get_stat(status["Stats"], "duo", "Rating", "sa", status["defaultSeason"])
-    dic3 = get_stat(status["Stats"], "squad", "Rating", "sa", status["defaultSeason"])
     try:
+        dic1 = get_stat(status["Stats"], "solo", "Rating", "sa", status["defaultSeason"])
+        dic2 = get_stat(status["Stats"], "duo", "Rating", "sa", status["defaultSeason"])
+        dic3 = get_stat(status["Stats"], "squad", "Rating", "sa", status["defaultSeason"])
         if dic1:
             rating1 = int(dic1["value"])
             modo_solo = "solo"
