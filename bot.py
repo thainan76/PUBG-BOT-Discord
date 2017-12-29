@@ -208,4 +208,4 @@ async def rank(ctx, username: str):
     except:
         await bot.say(ctx.message.author.mention + ", digite seu nick corretamente, não conseguimos localizar dados para a conta <"+ username +">. ")
 
-bot.run('Mzg2NTEyMjQwOTg5NDM3OTYz.DQ8LfQ.3MsAsV6ZkWKjKKOsFdiQoGrwXzo')
+bot.run(TOKEN)
