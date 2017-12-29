@@ -52,9 +52,9 @@ async def pubHelp(ctx):
 async def rank(ctx, username: str):
     status = api.player(username)
     try:
-        dic1 = get_stat(status["Stats"], "solo", "Rating", "sa", "2018-01")
-        dic2 = get_stat(status["Stats"], "duo", "Rating", "sa", "2018-01")
-        dic3 = get_stat(status["Stats"], "squad", "Rating", "sa", "2018-01")
+        dic1 = get_stat(status["Stats"], "solo", "Rating", "sa", status["defaultSeason"])
+        dic2 = get_stat(status["Stats"], "duo", "Rating", "sa", status["defaultSeason"])
+        dic3 = get_stat(status["Stats"], "squad", "Rating", "sa", status["defaultSeason"])
         #status["defaultSeason"]
         if dic1:
             rating1 = int(dic1["value"])
