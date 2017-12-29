@@ -9,6 +9,7 @@ import json
 
 api = core.PUBGAPI("ecb0deba-710c-411f-9342-630875d48a9e")
 bot = commands.Bot(command_prefix='!')
+client = discord.Client()
 
 
 @bot.event
@@ -208,4 +209,4 @@ async def rank(ctx, username: str):
     except:
         await bot.say(ctx.message.author.mention + ", digite seu nick corretamente, não conseguimos localizar dados para a conta <"+ username +">. ")
 
-bot.login(process.env.TOKEN)
+client.login(process.env.TOKEN)
