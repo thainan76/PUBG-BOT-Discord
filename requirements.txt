@@ -13,5 +13,5 @@ urban-async
 safygiphy
 discord.py
 requests
-os
 pypubg
+os
