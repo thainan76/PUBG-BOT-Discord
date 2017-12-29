@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import pypubg
+import os
 from pypubg import core
 import asyncio
 import requests
